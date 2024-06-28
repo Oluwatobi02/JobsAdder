@@ -14,9 +14,6 @@ app.get('/', (req, res) => {
 });
 
 app.post('/jobs',async (req, res) => {
-
-    console.log("was hit..")
-    console.log(req.body, 'body')
     await addJob(req.body)
     
 })
